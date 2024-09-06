@@ -2,132 +2,174 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>case-2</title>
+
+    <!--    google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <title>demo</title>
+
 </head>
 
 <style>
+
     header{
-        width: 100%;
-        height: 60px;
-        position: fixed;
-        /*position: relative;*/
-        background: deepskyblue;
-        top: 0;
-    }
-    header>img{
-        height: 40px;
-        width: 70px;
-        left: 30px;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        position: absolute;
-    }
-    .navigation-bar{
+        position: relative;
+        background-color: white;
         height: 50px;
-        width: 370px;
-        font-family: sans-serif;
-        list-style: none;
+    }
+    header>nav>ul>li{
         display: inline;
-        right: 30px;
+        margin-left: 10px;
+    }
+    header>nav{
+        height: fit-content;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        margin: auto;
+    }
+
+    footer>div{
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        padding: 5px 0px;
+    }
+    /*sidebar*/
+    aside>nav>ul{
+        list-style: none;
+        margin: 0;
+        padding: 10%;
+    }
+
+    aside>nav>ul>li{
+        padding: 10px;
+    }
+    aside{
+        background-color: purple;
+        color: white;
+        width: 250px;
+        position: absolute;
         top: 0;
         bottom: 0;
-        margin: auto;
+    }
+
+    main{
+        position: relative;
+    }
+
+    section{
+        position: relative;
+        font-family: "New Amsterdam", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 255px;
+    }
+    main>section>p:first-child{
+        margin-top: 0;
+    }
+    main>section>p:last-child{
+        margin-bottom: 0;
+    }
+
+    main>section>section{
+        background: #26ace0;
+        position: relative;
+        height: 300px;
+
+    }
+
+    main>section>section>div{
+        background: url("assets/images/monkey.gif");
+        width: calc(100%/3);
+        height: 300px;
         position: absolute;
     }
-    .navigation-bar>ul>li{
-        margin-left: 20px;
-        display: inline;
+    main>section>section>div:nth-child(2){
+        right: 0;
+        left: 0;
+        margin: auto;
     }
-    footer {
-        background: deepskyblue;
+    main>section>section>div:nth-child(3){
+        right: 0;
     }
-    footer>div{
-        color: black;
-        text-align: center;
-    }
+
+
 </style>
 <body>
-    <!--header section-->
-    <header>
-<!--        logo-->
-        <img src="assets/images/img.png" alt="logo">
+<!--    header section-->
+<header>
+    <img src="assets/images/img.png" width="100" height="50">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+</header>
 
-<!--        navigation bar-->
-        <nav class="navigation-bar">
+<!--main section-->
+<main>
+    <!--        side bar-->
+    <aside>
+        <nav>
             <ul>
                 <li>Home</li>
-                <li>Service</li>
+                <li>Services</li>
                 <li>Contact</li>
                 <li>About Us</li>
             </ul>
         </nav>
-    </header>
+    </aside>
+    <!--        content-->
+    <section>
 
-    <main>
-<!--        side bar-->
-        <aside>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Service</li>
-                    <li>Contact</li>
-                    <li>About Us</li>
-                </ul>
-            </nav>
-        </aside>
-    </main>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
 
-<!--    content-->
-<section class="content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+        </p>
 
-<!--    monkey-->
-    <section class="monkey">
-        <div></div>
-        <div></div>
-        <div></div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur blanditiis eius ex explicabo iure laboriosam perferendis porro, praesentium rem reprehenderit ut vero. Ad hic id laboriosam laudantium magnam repellendus.
+        </p>
+
     </section>
+</main>
 
-<!--    paragraph-->
-    <p>
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem delectus ducimus eaque enim eum excepturi explicabo id, in nam nemo placeat quas quis repudiandae sint, veniam voluptate voluptatem.
-    </p>
-</section>
-<!--foote section-->
-    <footer>
-        <div>Developed by IJSE</div>
-    </footer>
+<!--footer section-->
+<footer>
+    <div>Developed By Ijse</div>
+</footer>
 </body>
 </html>

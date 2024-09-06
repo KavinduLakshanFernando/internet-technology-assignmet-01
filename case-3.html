@@ -2,102 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Case-2</title>
+    <title>Title</title>
+    <style>
+
+
+        section{
+            height: 1000px;
+        }
+
+        section>div{
+            width: 300px;
+            height: 300px;
+            background: gray;
+            border-radius: 100%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        section>div:nth-child(2){
+            width: 250px;
+            height: 250px;
+            background: red;
+            border-radius: 100%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        section>div:nth-child(3){
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        section>div:nth-child(4){
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: purple;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        section>div:nth-child(5){
+            position: absolute;
+            top:1000px;
+            width: 200px;
+            height: 200px;
+            background: deepskyblue;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        section:nth-child(2)>div{
+            position: absolute;
+            top:1500px;
+            width: 200px;
+            height: 200px;
+            background: rosybrown;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+
+    </style>
 </head>
 
-<style>
-
-    body>section{
-        height: 1000px;
-        width: 1000px;
-        position: relative;
-        font-weight: bold;
-        font-family: Arial;
-        color: white;
-    }
-    .gray-circle{
-        width: 250px;
-        height: 250px;
-        border-radius: 100%;
-        border: 35px solid gray;
-        position: fixed;
-        margin: auto;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-
-    .red-circle{
-        width: 250px;
-        height: 250px;
-        border-radius: 100%;
-        border: 15px solid red;
-        position: fixed;
-        margin: auto;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-
-    .hello{
-        width: 250px;
-        height: 250px;
-        border-radius: 100%;
-        background-color: purple;
-        position: absolute;
-        margin: auto;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        text-align: center;
-        align-content: center;
-        font-size: 30px;
-    }
-    .welcome{
-        width: 250px;
-        height: 250px;
-        border-radius: 100%;
-        background-color: deepskyblue;
-        position: absolute;
-        margin: auto;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        text-align: center;
-        align-content: center;
-        font-size: 30px;
-    }
-    .ijse{
-        width: 250px;
-        height: 250px;
-        border-radius: 100%;
-        background-color: orange;
-        position: absolute;
-        margin: auto;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        text-align: center;
-        align-content: center;
-        font-size: 30px;
-    }
-</style>
 <body>
-
-<div class="gray-circle">
-    <div class="red-circle"></div>
-</div>
 <section>
-    <div class="hello" Hello></div>
-    <div class="welcome" Welcome To></div>
-    <div class="ijse" Institute of Software Engineering></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div>hello</div>
+    <div>Welcome to</div>
 </section>
 
-
+<section>
+    <div>
+        INSTITUTE of<br>
+        Software <br>
+        Engineering
+    </div>
+</section>
 </body>
 </html>
